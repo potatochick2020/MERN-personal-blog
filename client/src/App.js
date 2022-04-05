@@ -1,21 +1,13 @@
-import NavBar from "./components/navbar/NavBar";
-import Homepage from "./pages/homepage/Homepage";
-
-
-
+import NavBar from './components/navbar/NavBar'
+import './index.css'
 
 function App() {
-  const currentUser = true;
   return (
-    <Router>
-      <NavBar />
-      <Switch>
-        <Route exact path="/">
-          <Homepage />
-        </Route>
-      </Switch>
-    </Router>
-  );
+  <>
+  
+    <NavBar />;
+  </>
+  )
 }
 
 export default App;
