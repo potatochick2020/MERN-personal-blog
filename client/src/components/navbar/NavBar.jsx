@@ -3,8 +3,8 @@ import './NavBar.css'
 
 export default function NavBar(){
     return ( 
-        <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
-            <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <nav class="bg-white border-gray-200 px-2 dark:bg-gray-800">
+            <div class="container flex flex-wrap justify-center mx-auto py-3  ">
                 <a href="https://flowbite.com" class="flex items-center">
                     <i class="fa fa-linkedin text-xl text-white"></i>
                     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
