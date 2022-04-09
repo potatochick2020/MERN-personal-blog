@@ -1,6 +1,6 @@
 .sidebar {
     flex: 3;
-    height: fit-content;
+    height: auto;
     margin: 20px;
     padding-bottom: 30px;
     background-color: #fdfbfb;
@@ -33,7 +33,7 @@
   .sidebarItem > img {
     margin-top: 15px;
     width: 250px;
-    height: 250px;
+    height: auto;
   }
   
   .sidebarItem > p {
@@ -47,7 +47,8 @@
   
   .sidebarListItem {
     display: inline-block;
-    width: 50%;
+    text-align: center; 
+    width: 100%;
     margin-top: 15px;
     cursor: pointer;
   }
@@ -61,6 +62,6 @@
   }
   
   .sidebarIcon {
-    font-size: 16px;
-    margin-left: 10px;
+    font-size: 26px;
+    margin-left: 13px;
   }

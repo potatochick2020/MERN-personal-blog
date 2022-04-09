@@ -1,18 +1,17 @@
 
 import "./sidebar.css";
-
+import sidebarImage from "./sidebar.JPG" 
 export default function SideBar() {
   return (
     <div className="sidebar">
       <div className="sidebarItem">
         <span className="sidebarTitle">ABOUT ME</span>
         <img
-          src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandblog/demo/wp-content/uploads/2015/11/aboutme.jpg"
+          src={sidebarImage}
           alt=""
         />
         <p>
-          Laboris sunt aute cupidatat velit magna velit ullamco dolore mollit
-          amet ex esse.Sunt eu ut nostrud id quis proident.
+          A year 2 Information technology management for business student. I like everything related to technology. Hope this blog will inspire you a bit! 
         </p>
       </div>
       <div className="sidebarItem">
@@ -20,43 +19,37 @@ export default function SideBar() {
         <ul className="sidebarList">
           <li className="sidebarListItem">
             
-              Life
+              Data Struct & Algo
             
           </li>
           <li className="sidebarListItem">
            
-              Music
-            
-          </li>
-          <li className="sidebarListItem">
-           
-              Sport
-            
-          </li>
-          <li className="sidebarListItem">
-            
-              Style
-            
-          </li>
-          <li className="sidebarListItem">
-            
-              Tech
-            
-          </li>
-          <li className="sidebarListItem">
-          
-              Cinema
+              Distributed System
             
           </li>
         </ul>
       </div>
       <div className="sidebarItem">
-        <span className="sidebarTitle">FOLLOW US</span>
+        <span className="sidebarTitle">TAGS</span>
+        <ul className="sidebarList">
+          <li className="sidebarListItem">
+            
+              C++
+            
+          </li>
+          <li className="sidebarListItem">
+           
+              GoLang
+            
+          </li>
+        </ul>
+      </div>
+      <div className="sidebarItem">
+        <span className="sidebarTitle">FOLLOW ME <s>BACK HOME</s></span>
         <div className="sidebarSocial">
-          <i className="sidebarIcon fab fa-facebook-square"></i>
-          <i className="sidebarIcon fab fa-instagram-square"></i>
-          <i className="sidebarIcon fab fa-pinterest-square"></i>
-          <i className="sidebarIcon fab fa-twitter-square"></i>
+          <i class="fa fa-linkedin sidebarIcon" aria-hidden="true"></i>
+          <i class="fa fa-youtube sidebarIcon" aria-hidden="true"></i>
+          <i class="fa fa-envelope sidebarIcon" aria-hidden="true"></i>
         </div>
       </div>
     </div>
