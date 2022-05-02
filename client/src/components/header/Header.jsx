@@ -1,18 +1,20 @@
 import "./header.css"
-import headerImage from "./header.JPG" 
+import { Link } from "react-router-dom"
 
 export default function Header(){
     return (
+        <>
         <div className="header">
         <div className="headerTitles">
             <span className="headerTitleSm">MongoDB + ExpressJS + ReactJS + NodeJS</span>
-            <span className="headerTitleLg">Noka's World</span>
+            <span className="headerTitleLg"><Link to="/"> Noka's World </Link></span>
         </div>
         <img
             className="headerImg"
-            src={headerImage}
+            src="./header.jpg"
             alt=""
         />
-    </div>
+        </div>
+        </>
     )
 }
