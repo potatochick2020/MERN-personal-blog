@@ -1,4 +1,5 @@
 import "./header.css"
+import headerImage from "./headerbanner.JPG" 
 import { Link } from "react-router-dom"
 
 export default function Header(){
@@ -7,11 +8,11 @@ export default function Header(){
         <div className="header">
         <div className="headerTitles">
             <span className="headerTitleSm">MongoDB + ExpressJS + ReactJS + NodeJS</span>
-            <span className="headerTitleLg">Noka's World</span>
+            <a className="headerTitleLg"><Link to="/">Noka's World</Link></a>
         </div>
         <img
             className="headerImg"
-            src="./headerbanner.jpg"
+            src={headerImage}
             alt=""
         />
         </div>

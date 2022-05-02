@@ -47,14 +47,11 @@
   background-color: rgb(252, 173, 173);
 }
 
-.loginRegisterButton {
+.loginHelpButton {
   position: absolute;
   top: 60px;
   right: 20px;
-  background-color: teal;
-  cursor: pointer;
   border: none;
   padding: 10px;
-  color: white;
   border-radius: 10px;
 }
