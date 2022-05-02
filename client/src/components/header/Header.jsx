@@ -7,11 +7,11 @@ export default function Header(){
         <div className="header">
         <div className="headerTitles">
             <span className="headerTitleSm">MongoDB + ExpressJS + ReactJS + NodeJS</span>
-            <span className="headerTitleLg"><Link to="/"> Noka's World </Link></span>
+            <span className="headerTitleLg">Noka's World</span>
         </div>
         <img
             className="headerImg"
-            src="./header.jpg"
+            src="./headerbanner.jpg"
             alt=""
         />
         </div>
