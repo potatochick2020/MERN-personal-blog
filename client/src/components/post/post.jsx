@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 
 export default function Post({ post }) {
   const PF = "http://localhost:5600/images/";
+  function createMarkup() {
+    return {__html: post.desc};
+  }
   return (
     <div className="post">
       {post.photo && <img className="postImg" src={PF + post.photo} alt="" />}
@@ -20,7 +23,7 @@ export default function Post({ post }) {
           {new Date(post.createdAt).toDateString()}
         </span>
       </div>
-      <p className="postDesc">{post.desc}</p>
+      <p className="postDesc"><div dangerouslySetInnerHTML={createMarkup()} /></p>
     </div>
   );
 }

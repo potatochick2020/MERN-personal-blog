@@ -7,8 +7,8 @@ export default function Header(){
         <>
         <div className="header">
         <div className="headerTitles">
-            <span className="headerTitleSm">MongoDB + ExpressJS + ReactJS + NodeJS</span>
-            <a className="headerTitleLg"><Link to="/">Noka's World</Link></a>
+            <span className="headerTitleSm font-medium drop-shadow">MongoDB + ExpressJS + ReactJS + NodeJS</span>
+            <a className="headerTitleLg font-extrabold drop-shadow"><Link to="/">Noka's World</Link></a>
         </div>
         <img
             className="headerImg"

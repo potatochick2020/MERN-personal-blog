@@ -20,11 +20,10 @@ export default function SinglePost() {
       const res = await axios.get("/posts/" + path);
       setPost(res.data);
       setTitle(res.data.title);
-      setDesc(res.data.desc);
+      setDesc(res.data.desc.replace('&', '&amp;'));
     };
     getPost();
   }, [path]);
-
   const handleDelete = async () => {
     try {
       await axios.delete(`/posts/${post._id}`, {
@@ -44,6 +43,10 @@ export default function SinglePost() {
       setUpdateMode(false)
     } catch (err) {}
   };
+
+  function createMarkup() {
+    return {__html: desc};
+  }
 
   return (
     <div className="singlePost">
@@ -89,7 +92,8 @@ export default function SinglePost() {
             onChange={(e) => setDesc(e.target.value)}
           />
         ) : (
-          <p className="singlePostDesc">{desc}</p>
+          
+          <p className="singlePostDesc"><div dangerouslySetInnerHTML={createMarkup()} /></p>
         )}
         {updateMode && (
           <button className="singlePostButton" onClick={handleUpdate}>
